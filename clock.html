@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLOCK</title>
+	<link rel="stylesheet" type="text/css" href="clockstyle.css">
+</head>
+<body>
+	<div id="main">
+		<div class="top">
+			<h1 class="title">LOLCAT CLOCK</h1>
+			<p class="content">I CAN HAZ TIME??</p>
+			<p id="time"></p>
+		</div>
+		<div class="image">
+			<blockquote id="timeEvent">This is where time events are reported</blockquote>
+			<img id="lolcatImage" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg" alt="lolcat">
+		</div>
+		<div id="clock">
+			<p>SET WAKEUP TIME</p>
+			<select id="wakeup">
+				<option value="24">12 A.M. - 1 A.M.</option>
+				<option value="1">1 A.M. - 2 A.M.</option>
+				<option value="2">2 A.M. - 3 A.M.</option>
+				<option value="3">3 A.M. - 4 A.M.</option>
+				<option value="4">4 A.M. - 5 A.M.</option>
+				<option value="5">5 A.M. - 6 A.M.</option>
+				<option value="6">6 A.M. - 7 A.M.</option>
+				<option value="7">7 A.M. - 8 A.M.</option>
+				<option value="8" selected>8 A.M. - 9 A.M.</option>
+				<option value="9">9 A.M. -10 A.M.</option>
+				<option value="10">10 A.M. - 11 A.M.</option>
+				<option value="11">11 A.M. - 12 P.M.</option>
+				<option value="12">12 P.M. - 1 P.M.</option>
+				<option value="13">1 P.M. - 2 P.M</option>
+				<option value="14">2 P.M. - 3 P.M</option>
+				<option value="15">3 P.M. - 4 P.M.</option>
+				<option value="16">4 P.M. - 5 P.M.</option>
+				<option value="17">5 P.M. - 6 P.M.</option>
+				<option value="18">6 P.M. - 7 P.M.</option>
+				<option value="19">7 P.M. - 8 P.M.</option>
+				<option value="20">8 P.M. - 9 P.M.</option>
+				<option value="21">9 P.M. - 10 P.M.</option>
+				<option value="22">10 P.M. - 11 P.M.</option>
+				<option value="23">11 P.M. - 12 A.M.</option>
+			</select>
+			<p>SET LUNCH TIME</p>
+			<select id="lunch">
+				<option value="24">12 A.M. - 1 A.M.</option>
+				<option value="1">1 A.M. - 2 A.M.</option>
+				<option value="2">2 A.M. - 3 A.M.</option>
+				<option value="3">3 A.M. - 4 A.M.</option>
+				<option value="4">4 A.M. - 5 A.M.</option>
+				<option value="5">5 A.M. - 6 A.M.</option>
+				<option value="6">6 A.M. - 7 A.M.</option>
+				<option value="7">7 A.M. - 8 A.M.</option>
+				<option value="8">8 A.M. - 9 A.M.</option>
+				<option value="9">9 A.M. -10 A.M.</option>
+				<option value="10">10 A.M. - 11 A.M.</option>
+				<option value="11">11 A.M. - 12 P.M.</option>
+				<option value="12" selected>12 P.M. - 1 P.M.</option>
+				<option value="13">1 P.M. - 2 P.M</option>
+				<option value="14">2 P.M. - 3 P.M</option>
+				<option value="15">3 P.M. - 4 P.M.</option>
+				<option value="16">4 P.M. - 5 P.M.</option>
+				<option value="17">5 P.M. - 6 P.M.</option>
+				<option value="18">6 P.M. - 7 P.M.</option>
+				<option value="19">7 P.M. - 8 P.M.</option>
+				<option value="20">8 P.M. - 9 P.M.</option>
+				<option value="21">9 P.M. - 10 P.M.</option>
+				<option value="22">10 P.M. - 11 P.M.</option>
+				<option value="23">11 P.M. - 12 A.M.</option>
+			</select>
+			<p>SET NAP TIME</p>
+			<select id="nap">
+				<option value="24">12 A.M. - 1 A.M.</option>
+				<option value="1">1 A.M. - 2 A.M.</option>
+				<option value="2">2 A.M. - 3 A.M.</option>
+				<option value="3">3 A.M. - 4 A.M.</option>
+				<option value="4">4 A.M. - 5 A.M.</option>
+				<option value="5">5 A.M. - 6 A.M.</option>
+				<option value="6">6 A.M. - 7 A.M.</option>
+				<option value="7">7 A.M. - 8 A.M.</option>
+				<option value="8">8 A.M. - 9 A.M.</option>
+				<option value="9">9 A.M. -10 A.M.</option>
+				<option value="10">10 A.M. - 11 A.M.</option>
+				<option value="11">11 A.M. - 12 P.M.</option>
+				<option value="12">12 P.M. - 1 P.M.</option>
+				<option value="13">1 P.M. - 2 P.M</option>
+				<option value="14">2 P.M. - 3 P.M</option>
+				<option value="15" selected>3 P.M. - 4 P.M.</option>
+				<option value="16">4 P.M. - 5 P.M.</option>
+				<option value="17">5 P.M. - 6 P.M.</option>
+				<option value="18">6 P.M. - 7 P.M.</option>
+				<option value="19">7 P.M. - 8 P.M.</option>
+				<option value="20">8 P.M. - 9 P.M.</option>
+				<option value="21">9 P.M. - 10 P.M.</option>
+				<option value="22">10 P.M. - 11 P.M.</option>
+				<option value="23">11 P.M. - 12 A.M.</option>
+			</select>
+			<button id="partytimebtn">Party Status</button>
+		</div>
+		<footer>
+			<p>&copy; SKILLSHARE 2016</p>
+		</footer>
+	</div>
+	<script type="text/javascript" src="clockjs.js"></script>
+</body>
+</html>
